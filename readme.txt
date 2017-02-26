@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 3.3
 Tested up to: 4.7
-Stable tag: 2.3
+Stable tag: 2.3.1
 
 Turn a string, list, or array of post IDs and/or slugs into a list of links to those posts. Provides a widget and template tag.
 
@@ -270,6 +270,9 @@ Do:
 
 
 == Upgrade Notice ==
+
+= 2.3.1 =
+Trivial update: fixed some unit tests, noted compatibility through WP 4.7+, updated copyright date
 
 = 2.3 =
 Minor update: minor updates to widget code and unit tests; verified compatibility through WP 4.4; updated copyright date (2016).
