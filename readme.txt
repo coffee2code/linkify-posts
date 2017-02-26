@@ -8,7 +8,7 @@ Requires at least: 3.3
 Tested up to: 4.7
 Stable tag: 2.3
 
-Turn a string, list, or array of post IDs and/or slugs into a list of links to those posts. Includes widget and template tag.
+Turn a string, list, or array of post IDs and/or slugs into a list of links to those posts. Provides a widget and template tag.
 
 
 == Description ==
@@ -22,9 +22,10 @@ Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/linkify-posts/) | [Pl
 
 == Installation ==
 
-1. Unzip `linkify-posts.zip` inside the `/wp-content/plugins/` directory for your site (or install via the built-in WordPress plugin installer)
-1. Activate the plugin through the 'Plugins' admin menu in WordPress
-1. Insert function call(s) to your templates to display links to posts when post IDs are known
+1. Install via the built-in WordPress plugin installer. Or download and unzip `linkify-posts.zip` inside the plugins directory for your site (typically `wp-content/plugins/`)
+2. Activate the plugin through the 'Plugins' admin menu in WordPress
+3. Optional: Use the `c2c_linkify_posts()` template tag in one of your templates (be sure to pass it at least the first argument indicating what post IDs and/or slugs to linkify -- the argument can be an array, a space-separate list, or a comma-separated list). Other optional arguments are available to customize the output.
+4. Optional: Use the "Linkify Posts" widget in one of the sidebar provided by your theme.
 
 
 == Screenshots ==
@@ -156,12 +157,13 @@ Do:
 
 == Changelog ==
 
-= () =
+= 2.3.1 (2017-02-26) =
 * Fix: Fix unit tests by not declaring test class variable as static
 * Change: Update unit test bootstrap
     * Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable
     * Enable more error output for unit tests
 * Change: Note compatibility through WP 4.7+
+* Change: Minor readme.txt content and formatting tweaks
 * Change: Update copyright date (2017)
 
 = 2.3 (2016-03-13) =
