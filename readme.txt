@@ -156,6 +156,10 @@ Do:
 
 == Changelog ==
 
+= () =
+* Change: Update unit test bootstrap
+    * Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable
+
 = 2.3 (2016-03-13) =
 * Change: Update widget to 004:
     * Add `register_widget()` and change to calling it when hooking 'admin_init'.
