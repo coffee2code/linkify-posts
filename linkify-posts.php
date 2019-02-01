@@ -85,7 +85,7 @@ function c2c_linkify_posts( $posts, $before = '', $after = '', $between = ', ', 
 			if ( $title ) {
 				$links[] = sprintf(
 					'<a href="%1$s" title="%2$s">%3$s</a>',
-					get_permalink( $id ),
+					esc_url( get_permalink( $id ) ),
 					esc_attr( sprintf( __( "View post: %s" ), $title ) ),
 					$title
 				);
