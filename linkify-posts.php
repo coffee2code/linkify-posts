@@ -7,7 +7,7 @@
  * Author URI:  http://coffee2code.com/
  * Text Domain: linkify-posts
  * License:     GPLv2 or later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Description: Turn a string, list, or array of post IDs and/or slugs into a list of links to those posts. Includes widget and template tag.
  *
  * Compatible with WordPress 3.3 through 4.7+.
