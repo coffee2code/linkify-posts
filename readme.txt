@@ -136,7 +136,7 @@ Outputs:
 
 The plugin exposes one action for hooking.
 
-= c2c_linkify_posts (action) =
+**c2c_linkify_posts (action)**
 
 The 'c2c_linkify_posts' hook allows you to use an alternative approach to safely invoke `c2c_linkify_posts()` in such a way that if the plugin were to be deactivated or deleted, then your calls to the function won't cause errors in your site.
 
@@ -160,6 +160,7 @@ Do:
 = () =
 * Change: Add GitHub link to readme
 * Change: Rename readme.txt section from 'Filters' to 'Hooks'
+* Change: Modify formatting of hook name in readme to prevent being uppercased when shown in the Plugin Directory
 * Change: Note compatibility through WP 5.1+
 * Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS
