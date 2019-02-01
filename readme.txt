@@ -158,6 +158,7 @@ Do:
 == Changelog ==
 
 = () =
+* Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS
 
 = 2.3.1 (2017-02-26) =
