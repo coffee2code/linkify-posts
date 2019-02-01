@@ -17,7 +17,7 @@ The plugin provides a widget called "Linkify Posts" as well as a template tag, `
 
 Particularly handy when used in conjunction with the post custom field feature of WordPress. You could define a custom field for "Related Posts" or "Additional Products" and manually list out post IDs, then utilize the function provided by this plugin to display links to those posts in a custom manner.
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/linkify-posts/) | [Plugin Directory Page](https://wordpress.org/plugins/linkify-posts/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/linkify-posts/) | [Plugin Directory Page](https://wordpress.org/plugins/linkify-posts/) | [GitHub](https://github.com/coffee2code/linkify-posts/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -158,6 +158,7 @@ Do:
 == Changelog ==
 
 = () =
+* Change: Add GitHub link to readme
 * Change: Note compatibility through WP 5.1+
 * Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS
