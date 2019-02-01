@@ -158,6 +158,7 @@ Do:
 == Changelog ==
 
 = () =
+* New: Add README.md
 * Change: Escape URL before use in attribute (hardening)
 * Change: Add GitHub link to readme
 * Change: Unit tests: Minor whitespace tweaks to bootstrap
