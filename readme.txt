@@ -132,7 +132,7 @@ Outputs:
 `No posts found.`
 
 
-== Filters ==
+== Hooks ==
 
 The plugin exposes one action for hooking.
 
@@ -159,6 +159,7 @@ Do:
 
 = () =
 * Change: Add GitHub link to readme
+* Change: Rename readme.txt section from 'Filters' to 'Hooks'
 * Change: Note compatibility through WP 5.1+
 * Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS
