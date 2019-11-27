@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Linkify Posts
- * Version:     2.3.2
+ * Version:     2.3.3
  * Plugin URI:  http://coffee2code.com/wp-plugins/linkify-posts/
  * Author:      Scott Reilly
  * Author URI:  http://coffee2code.com/
@@ -18,7 +18,7 @@
  *
  * @package Linkify_Posts
  * @author  Scott Reilly
- * @version 2.3.2
+ * @version 2.3.3
  */
 
 /*
