@@ -22,6 +22,12 @@
  */
 
 /*
+ * TODO:
+ * - Add shortcode
+ * - Add block
+ */
+
+/*
 	Copyright (c) 2007-2020 by Scott Reilly (aka coffee2code)
 
 	This program is free software; you can redistribute it and/or
