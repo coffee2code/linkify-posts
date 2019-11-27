@@ -4,6 +4,7 @@
 * New: Add CHANGELOG.md and move all but most recent changelog entries into it
 * Change: Note compatibility through WP 5.3+
 * Change: Update copyright date (2020)
+* Change: Split paragraph in README.md's "Support" section into two
 
 ## 2.3.2 _(2019-01-31)_
 * New: Add README.md
