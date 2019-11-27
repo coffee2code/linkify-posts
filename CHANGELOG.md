@@ -2,6 +2,7 @@
 
 ## _(in-progress)_
 * New: Add CHANGELOG.md and move all but most recent changelog entries into it
+* Change: Note compatibility through WP 5.3+
 
 ## 2.3.2 _(2019-01-31)_
 * New: Add README.md
