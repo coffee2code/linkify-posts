@@ -102,8 +102,8 @@ A single post ID/slug, or multiple post IDs/slugs defined via an array, or multi
 
 Outputs something like:
 
-`<a href="http://yourblog.com/archive/2008/01/15/some-post">Some Post</a>,
-<a href="http://yourblog.com/archive/2008/01/15/another-post">Another Post</a>`
+`<a href="https://example.com/archive/2008/01/15/some-post">Some Post</a>,
+<a href="https://example.com/archive/2008/01/15/another-post">Another Post</a>`
 
 * Assume that you have a custom field with a key of "Related Posts" that happens to have a value of "43 92" defined (and you're in-the-loop).
 
@@ -111,15 +111,15 @@ Outputs something like:
 
 Outputs something like:
 
-`Related posts: <a href="http://yourblog.com/archive/2008/01/15/some-post">Some Post</a>,
-<a href="http://yourblog.com/archive/2008/01/15/another-post">Another Post</a>`
+`Related posts: <a href="https://example.com/archive/2008/01/15/some-post">Some Post</a>,
+<a href="https://example.com/archive/2008/01/15/another-post">Another Post</a>`
 
 * `<ul><?php c2c_linkify_posts("43, 92", "<li>", "</li>", "</li><li>"); ?></ul>`
 
 Outputs something like:
 
-`<ul><li><a href="http://yourblog.com/archive/2008/01/15/some-post">Some Post</a></li>
-<li><a href="http://yourblog.com/archive/2008/01/15/another-post">Another Post</a></li></ul>`
+`<ul><li><a href="https://example.com/archive/2008/01/15/some-post">Some Post</a></li>
+<li><a href="https://example.com/archive/2008/01/15/another-post">Another Post</a></li></ul>`
 
 * `<?php c2c_linkify_posts(""); // Assume you passed an empty string as the first value ?>`
 
