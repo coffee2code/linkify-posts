@@ -2,9 +2,9 @@
 /**
  * Plugin Name: Linkify Posts
  * Version:     2.3.3
- * Plugin URI:  http://coffee2code.com/wp-plugins/linkify-posts/
+ * Plugin URI:  https://coffee2code.com/wp-plugins/linkify-posts/
  * Author:      Scott Reilly
- * Author URI:  http://coffee2code.com/
+ * Author URI:  https://coffee2code.com/
  * Text Domain: linkify-posts
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
