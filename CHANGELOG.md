@@ -1,7 +1,7 @@
 # Changelog
 
 ## _(in-progress)_
-* New: Add TODO.md and move existing TODO list from top of main plugin file into it
+* New: Add TODO.md and move existing TODO list from top of main plugin file into it (and add another item)
 * Change: Restructure unit test file structure
     * New: Create new subdirectory `phpunit/` to house all files related to unit testing
     * Change: Move `bin/` to `phpunit/bin/`
