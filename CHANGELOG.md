@@ -4,6 +4,7 @@
 * Change: Add textdomain for lone non-widget string
 * Change: Note compatibility through WP 5.7+
 * Change: Update copyright date (2021)
+* New: Add a few more possible TODO items
 
 ## 2.3.5 _(2020-08-17)_
 * New: Add TODO.md and move existing TODO list from top of main plugin file into it (and add another item)
