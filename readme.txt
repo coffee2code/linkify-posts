@@ -85,18 +85,22 @@ A single post ID/slug, or multiple post IDs/slugs defined via an array, or multi
 
 * These are all valid calls:
 
-`<?php c2c_linkify_posts(43); ?>`
-`<?php c2c_linkify_posts("43"); ?>`
-`<?php c2c_linkify_posts("hello-world"); ?>`
-`<?php c2c_linkify_posts("43 92 102"); ?>`
-`<?php c2c_linkify_posts("hello-world whats-cooking"); ?>`
-`<?php c2c_linkify_posts("43,92,102"); ?>`
-`<?php c2c_linkify_posts("hello-world, whats-cooking"); ?>`
-`<?php c2c_linkify_posts("43, 92, 102"); ?>`
-`<?php c2c_linkify_posts("hello-world, 92, whats-cooking"); ?>`
-`<?php c2c_linkify_posts(array(43,92,102)); ?>`
-`<?php c2c_linkify_posts(array("hello-world", "whats-cooking")); ?>`
-`<?php c2c_linkify_posts(array("43","92","102")); ?>`
+`
+<?php c2c_linkify_posts(43); ?>
+<?php c2c_linkify_posts("43"); ?>
+<?php c2c_linkify_posts("hello-world"); ?>
+<?php c2c_linkify_posts("43 92 102"); ?>
+<?php c2c_linkify_posts("hello-world whats-cooking"); ?>
+<?php c2c_linkify_posts("43,92,102"); ?>
+<?php c2c_linkify_posts("hello-world, whats-cooking"); ?>
+<?php c2c_linkify_posts("43, 92, 102"); ?>
+<?php c2c_linkify_posts("hello-world, 92, whats-cooking"); ?>
+<?php c2c_linkify_posts(array(43,92,102)); ?>
+<?php c2c_linkify_posts(array("hello-world", "whats-cooking")); ?>
+<?php c2c_linkify_posts(array("43","92","102")); ?>
+`
+
+Though, for consistency and readability, you'd be better off sticking to specifying slugs or IDs (with a preference for the former, especially if using hardcoded values).
 
 * `<?php c2c_linkify_posts("43 92"); ?>`
 
