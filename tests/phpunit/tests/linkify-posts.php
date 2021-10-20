@@ -155,16 +155,4 @@ class Linkify_Posts_Test extends WP_UnitTestCase {
 		$this->assertEquals( $expected, $this->get_results( array( array(), '<ul><li>', '</li></ul>', '</li><li>', '', $missing ), false ) );
 	}
 
-	/**
-	 * @expectedDeprecated linkify_post_ids
-	 */
-	public function test_deprecated_function() {
-		$this->assertEquals( $this->expected_output( 1 ), $this->get_results( array( $this->post_ids[0] ), true, true ) );
-		$this->assertEquals( $this->expected_output( 5 ), $this->get_results( array( $this->post_ids ), true, true ) );
-		$post = get_post( $this->post_ids[0] );
-		$this->assertEquals( $this->expected_output( 1 ), $this->get_results( array( $post->post_name ), true, true ) );
-		$post_slugs = array_map( array( $this, 'get_slug' ), $this->post_ids );
-		$this->assertEquals( $this->expected_output( 5 ), $this->get_results( array( $post_slugs ), true, true ) );
-	}
-
 }

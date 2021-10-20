@@ -116,16 +116,3 @@ function c2c_linkify_posts( $posts, $before = '', $after = '', $between = ', ', 
 }
 add_action( 'c2c_linkify_posts', 'c2c_linkify_posts', 10, 6 );
 endif;
-
-if ( ! function_exists( 'linkify_post_ids' ) ) :
-/**
- * Displays links to each of any number of posts specified via post IDs and/or slugs
- *
- * @since 1.0
- * @deprecated 2.0 Use c2c_linkify_posts() instead
- */
-function linkify_post_ids( $posts, $before = '', $after = '', $between = ', ', $before_last = '', $none = '' ) {
-	_deprecated_function( 'linkify_post_ids', '2.0', 'c2c_linkify_posts' );
-	return c2c_linkify_posts( $posts, $before, $after, $between, $before_last, $none );
-}
-endif;
