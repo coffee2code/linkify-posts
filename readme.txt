@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 3.3
 Tested up to: 5.8
-Stable tag: 2.3.6
+Stable tag: 2.4
 
 Turn a string, list, or array of post IDs and/or slugs into a list of links to those posts. Provides a widget and template tag.
 
@@ -67,6 +67,25 @@ This is the hook provided by the plugin:
 
 == Changelog ==
 
+= 2.4 (2021-10-19) =
+Highlights:
+
+This minor release removes support for the long-deprecated `linkify_post_ids()`, adds DEVELOPER-DOCS.md, notes compatibility through WP 5.8+, and minor reorganization and tweaks to unit tests.
+
+Details:
+
+* Change: Remove long-deprecated function `linkify_post_ids()`
+* New: Add DEVELOPER-DOCS.md and move template tag and hooks documentation into it
+* Change: Tweak installation instruction
+* Change: Note compatibility through WP 5.8+
+* Unit tests:
+    * Change: Restructure unit test directories
+        * Change: Move `phpunit/` into `tests/phpunit/`
+        * Change: Move `phpunit/bin/` into `tests/`
+    * Change: Remove 'test-' prefix from unit test file
+    * Change: In bootstrap, store path to plugin file constant
+    * Change: In bootstrap, add backcompat for PHPUnit pre-v6.0
+
 = 2.3.6 (2021-04-28) =
 * Change: Add textdomain for lone non-widget string
 * Change: Fix Markdown formatting for code examples in readme.txt
@@ -84,16 +103,13 @@ This is the hook provided by the plugin:
     * Change: Rename `phpunit.xml` to `phpunit.xml.dist` per best practices
 * Change: Note compatibility through WP 5.5+
 
-= 2.3.4 (2020-05-07) =
-* Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests
-* Change: Note compatibility through WP 5.4+
-* Change: Update links to coffee2code.com to be HTTPS
-* Change: Update examples in documentation to use a proper example URL
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/linkify-posts/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 2.4 =
+Minor update: removed support for long-deprecated `linkify_post_ids()`, added DEVELOPER-DOCS.md, noted compatibility through WP 5.8+, and minor reorganization and tweaks to unit tests
 
 = 2.3.6 =
 Trivial update: noted compatibility through WP 5.7+ and updated copyright date (2021).
