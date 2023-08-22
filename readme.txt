@@ -62,7 +62,7 @@ As an overview, this is the template tag provided by the plugin:
 
 This is the hook provided by the plugin:
 
-* `c2c_linkify_posts` : Allows use of an alternative approach to safely invoke `c2c_linkify_categories()` in such a way that if the plugin were deactivated or deleted, then your calls to the function won't cause errors in your site.
+* `c2c_linkify_posts` : Allows use of an alternative approach to safely invoke `c2c_linkify_posts()` in such a way that if the plugin were deactivated or deleted, then your calls to the function won't cause errors in your site.
 
 
 == Changelog ==
