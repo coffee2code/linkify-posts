@@ -1,6 +1,6 @@
 # Changelog
 
-## _(in-progress)_
+## 2.4.1 _(2023-08-22)_
 * Fix: Fix a typo in documentation
 * Change: Note compatibility through WP 6.3+
 * Change: Update copyright date (2023)
