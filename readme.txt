@@ -5,7 +5,7 @@ Tags: posts, post, link, linkify, archives, list, widget, template tag, coffee2c
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 3.3
-Tested up to: 5.8
+Tested up to: 6.3
 Stable tag: 2.4
 
 Turn a string, list, or array of post IDs and/or slugs into a list of links to those posts. Provides a widget and template tag.
