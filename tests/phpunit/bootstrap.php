@@ -5,6 +5,9 @@
  * @package Linkify_Posts
  */
 
+// Prevent web access.
+( php_sapi_name() !== 'cli' ) && die();
+
 define( 'LINKIFY_POSTS_PLUGIN_DIR',  dirname( __FILE__, 3 ) );
 define( 'LINKIFY_POSTS_PLUGIN_FILE', LINKIFY_POSTS_PLUGIN_DIR . '/linkify-posts.php' );
 
