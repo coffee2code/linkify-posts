@@ -3,6 +3,7 @@
 ## _(in-progress)_
 * Change: Add default values for optional arguments to inline parameter documentation
 * Change: Note compatibility through WP 6.6+
+* Change: Prevent unwarranted PHPCS complaints about unescaped output (HTML is allowed)
 * Change: Add inline comment for translators
 * Change: Update copyright date (2024)
 * Change: Reduce number of 'Tags' from `readme.txt`

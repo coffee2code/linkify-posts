@@ -113,6 +113,9 @@ function c2c_linkify_posts( $posts, $before = '', $after = '', $between = ', ', 
 		}
 		$response = $none;
 	}
+
+	// Output categories (which is permitted to include markup).
+	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	echo $before . $response . $after;
 }
 add_action( 'c2c_linkify_posts', 'c2c_linkify_posts', 10, 6 );
