@@ -51,11 +51,11 @@ if ( ! function_exists( 'c2c_linkify_posts' ) ) :
  *
  * @param int|array $posts       A single post ID/slug, or multiple post IDs/slugs defined via an array, or multiple posts IDs/slugs defined
  *                               via a comma-separated and/or space-separated string
- * @param string    $before      Optional. To appear before the entire post listing (if posts exist or if 'none' setting is specified).
- * @param string    $after       Optional. To appear after the entire post listing (if posts exist or if 'none' setting is specified).
- * @param string    $between     Optional. To appear between all posts.
- * @param string    $before_last Optional. To appear between the second-to-last and last element, if not specified, value of $between is used.
- * @param string    $none        Optional. To appear when no posts have been found.  If blank, then the entire function doesn't display anything.
+ * @param string    $before      Optional. To appear before the entire post listing (if posts exist or if 'none' setting is specified). Default empty string.
+ * @param string    $after       Optional. To appear after the entire post listing (if posts exist or if 'none' setting is specified). Default empty string.
+ * @param string    $between     Optional. To appear between all posts. Default ', '.
+ * @param string    $before_last Optional. To appear between the second-to-last and last element, if not specified, value of $between is used. Default empty string.
+ * @param string    $none        Optional. To appear when no posts have been found.  If blank, then the entire function doesn't display anything. Default empty string.
  */
 function c2c_linkify_posts( $posts, $before = '', $after = '', $between = ', ', $before_last = '', $none = '' ) {
 	if ( empty( $posts ) ) {
