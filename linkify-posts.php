@@ -81,15 +81,10 @@ function c2c_linkify_posts( $posts, $before = '', $after = '', $between = ', ', 
 			if ( 0 == (int) $id ) {
 				continue;
 			}
-			$title = get_the_title( $id );
-			if ( $title ) {
-				$links[] = sprintf(
-					'<a href="%1$s" title="%2$s">%3$s</a>',
-					esc_url( get_permalink( $id ) ),
-					/* translators: %s: Post's title */
-					esc_attr( sprintf( __( 'View post: %s', 'linkify-posts' ), $title ) ),
-					$title
-				);
+
+			$link = __c2c_linkify_posts_get_post_link( $id );
+			if ( $link ) {
+				$links[] = $link;
 			}
 		}
 		if ( empty( $before_last ) ) {
@@ -120,3 +115,27 @@ function c2c_linkify_posts( $posts, $before = '', $after = '', $between = ', ', 
 }
 add_action( 'c2c_linkify_posts', 'c2c_linkify_posts', 10, 6 );
 endif;
+
+/**
+ * Returns the archive link for a post.
+ *
+ * @access private
+ *
+ * @param int $post_id The post ID.
+ * @return string
+ */
+function __c2c_linkify_posts_get_post_link( $post_id ) {
+	$title = get_the_title( $post_id );
+
+	if ( ! $title ) {
+		return '';
+	}
+
+	return sprintf(
+		'<a href="%1$s" title="%2$s">%3$s</a>',
+		esc_url( get_permalink( $post_id ) ),
+		/* translators: %s: Post's title */
+		esc_attr( sprintf( __( 'View post: %s', 'linkify-posts' ), $title ) ),
+		esc_html( $title )
+	);
+}

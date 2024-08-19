@@ -1,6 +1,7 @@
 # Changelog
 
 ## _(in-progress)_
+* New: Extract code for creating link to post's archive into new `__c2c_linkify_posts_get_post_link()`
 * Change: Add default values for optional arguments to inline parameter documentation
 * Change: Note compatibility through WP 6.6+
 * Change: Prevent unwarranted PHPCS complaints about unescaped output (HTML is allowed)

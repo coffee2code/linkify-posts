@@ -155,4 +155,27 @@ class Linkify_Posts_Test extends WP_UnitTestCase {
 		$this->assertEquals( $expected, $this->get_results( array( array(), '<ul><li>', '</li></ul>', '</li><li>', '', $missing ), false ) );
 	}
 
+	/*
+	 * __c2c_linkify_posts_get_post_link()
+	 */
+
+	 public function test___c2c_linkify_posts_get_post_link() {
+		$title = get_the_title( $this->post_ids[0] );
+		$expected = sprintf(
+			'<a href="http://example.org/?p=%d" title="View post: %s">%s</a>',
+			esc_attr( $this->post_ids[0] ),
+			esc_attr( $title ),
+			esc_html( $title )
+		);
+
+		$this->assertEquals(
+			$expected,
+			__c2c_linkify_posts_get_post_link( $this->post_ids[0] )
+		);
+	}
+
+	public function test___c2c_linkify_posts_get_post_link_with_invalid_id() {
+		$this->assertEmpty( __c2c_linkify_posts_get_post_link( -1 ) );
+	}
+
 }
