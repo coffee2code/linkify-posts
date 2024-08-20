@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 3.3
 Tested up to: 6.6
-Stable tag: 2.4.1
+Stable tag: 2.5
 
 Turn a string, list, or array of post IDs and/or slugs into a list of links to those posts. Provides a widget and template tag.
 
@@ -67,6 +67,32 @@ This is the hook provided by the plugin:
 
 == Changelog ==
 
+= 2.5 (2024-08-19) =
+Highlights:
+
+This recommended release features improvements to widget implementation, adds some hardening measures, notes compatibility through WP 6.6+, removes unit tests from release packaging, updates copyright date (2024), and other code improvements and minor changes.
+
+Details:
+
+* Widget:
+    * New: Extract base widget functionality common amongst my Linkify family of plugins into reusable base class
+    * Change: Define a default 'none' message so that something is shown when no categories are specified
+    * Change: Improve spacing in block editor around widget input field help text
+    * New: Add `get_config()` to retrieve configuration
+    * Hardening: Escape some variables prior to being output
+    * New: Add unit tests
+    * Change: Update version to 005
+* New: Extract code for creating link to post's archive into new `__c2c_linkify_posts_get_post_link()`
+* Change: Add default values for optional arguments to inline parameter documentation
+* Change: Note compatibility through WP 6.6+
+* Change: Prevent unwarranted PHPCS complaints about unescaped output (HTML is allowed)
+* Change: Add inline comment for translators
+* Change: Update copyright date (2024)
+* Change: Reduce number of 'Tags' from `readme.txt`
+* Change: Remove development and testing-related files from release packaging
+* Hardening: Unit tests: Prevent direct web access to `bootstrap.php`
+* New: Add some potential TODO items
+
 = 2.4.1 (2023-08-22) =
 * Fix: Fix a typo in documentation
 * Change: Note compatibility through WP 6.3+
@@ -96,17 +122,13 @@ Details:
     * Change: In bootstrap, store path to plugin file constant
     * Change: In bootstrap, add backcompat for PHPUnit pre-v6.0
 
-= 2.3.6 (2021-04-28) =
-* Change: Add textdomain for lone non-widget string
-* Change: Fix Markdown formatting for code examples in readme.txt
-* Change: Note compatibility through WP 5.7+
-* Change: Update copyright date (2021)
-* New: Add a few more possible TODO items
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/linkify-posts/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 2.5 =
+Recommended update: improved widget implementation, added some hardening measures, noted compatibility through WP 6.6+, removed unit tests from release packaging, updated copyright date (2024), and other code improvements and minor changes.
 
 = 2.4.1 =
 Trivial update: noted compatibility through WP 6.3+, updated unit tests to run against latest WordPress, fixed a typo in documentation, and updated copyright date (2023)
