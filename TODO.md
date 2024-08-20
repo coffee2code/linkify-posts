@@ -10,9 +10,7 @@ The following list comprises ideas, suggestions, and known issues, all of which 
 * Support a `$args`-style argument array rather than numerous explicit arguments (though this is a bit moot with PHP8 features). Obviously, maintain backward-compatibility.
   * Great opportunity to add support for an optional 'echo' arg to control if function echoes.
   * Update all documentation examples to use the new syntax
-* Abstract widget class code into generic class shared amongst my Linkify family of plugins.
-  * Consider using `c2c-widget.php` if that can be dropped in.
-  * Move strings defined in widget class into main plugin file
+* Widget: Consider using `c2c-widget.php` if that can be dropped in.
 * Support getting post IDs via a custom field if on a single page/post? (for a manual related-posts implementation)
 * Support conditional before and after? (if main content is empty, don't output before/after strings; could just be 'before_none' and 'after_none', but only after argument array support is added)
 * Widget: Indicate that 'posts' is required
