@@ -6,6 +6,7 @@
     * Hardening: Prevent unsafe markup from being output
     * Change: Include version number in class name to ensure use of expected version
     * Change: Move PHPCS-related inline comments with their associated `phpcs:ignore` comments
+* Fix: Use correct textdomain for a string translation
 * Change: Note compatibility through WP 6.8+
 * Change: Note compatibility through PHP 8.3+
 * Change: Update copyright date (2025)

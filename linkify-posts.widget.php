@@ -71,7 +71,7 @@ class c2c_LinkifyPostsWidget extends c2c_LinkifyWidget_006 {
 			),
 			'none' =>  array(
 				'input'   => 'text',
-				'default' => __( 'No posts specified to be displayed', 'linkify-tags' ),
+				'default' => __( 'No posts specified to be displayed', 'linkify-posts' ),
 				'label'   => __( 'None text', 'linkify-posts' ),
 				'help'    => __( 'Text to appear when no posts have been found.  If blank, then the entire function doesn\'t display anything.', 'linkify-posts' ),
 			),
