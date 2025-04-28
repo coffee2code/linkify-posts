@@ -13,6 +13,8 @@ Displays links to each of any number of posts specified via post IDs/slugs
 
 ### Arguments
 
+_Note: Unsafe markup (such as `script`) will be omitted from any string being output._
+
 * `$posts` _(string|int|array)_
 A single post ID/slug, or multiple post IDs/slugs defined via an array, or multiple post IDs/slugs defined via a comma-separated and/or space-separated string
 
