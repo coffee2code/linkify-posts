@@ -5,6 +5,7 @@
 * Change: Note compatibility through PHP 8.3+
 * Change: Update copyright date (2025)
 * Unit tests:
+    * Change: Remove vestiges of testing for now-removed `linkify_posts()`
     * Change: Explicitly define return type for overridden methods
 
 ## 2.5 _(2024-08-19)_
